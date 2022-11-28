@@ -16,6 +16,7 @@ from library import Library
 # 2.2 TODO: In this file:
 #   Create an instance of the `Library` class called `my_library`.
 my_library = Library()
+print(my_library)
 
 # 2.3 TODO: In this file:
 #   Print the `books` attribute of `my_library`. It should be an empty list.

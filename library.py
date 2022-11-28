@@ -5,13 +5,14 @@ class Library():
     def __init__(self):
         """Initialize the empty book list"""
         self.books = []
+       
 
   
 
-    def add_title(self):
+    def add_title(self, title, author):
         """Add a Book object with the given title and author to the book list"""
-        self.title = title
-        self.author = author
+        #self.title = title
+        #self.author = author
         book = Book(title, author)
         self.books.append(book)
 
@@ -19,11 +20,11 @@ class Library():
         """Return the number of books currently in the booklist"""
         return len(self.books)
 
-    def remove_title(self):
+    def remove_title(self, title):
         """Remove a book from the book list"""
         self.title = title
         for booktitle in self.books:
-            if booktitle.title == self.title:
+            if booktitle.title == title:
                 self.books.remove(booktitle)
 
     def display_books(self):
